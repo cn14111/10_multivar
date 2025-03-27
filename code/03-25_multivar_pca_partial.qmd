@@ -426,6 +426,19 @@ Some PCA properties:
 ```{r pca in action}
 knitr::include_graphics("https://miro.medium.com/v2/resize:fit:1200/1*V4H3Cu8qGr_90WANKSO9BA.gif")
 ```
+
+```{r}
+#| message: false
+#| warning: false
+download.file("https://miro.medium.com/v2/resize:fit:1200/1*V4H3Cu8qGr_90WANKSO9BA.gif",
+destfile = "cool_animation.gif", mode = "wb")
+
+knitr::include_graphics("cool_animation.gif")
+```
+
+
+
+
 Let's run PCA for our weather data.  
 
 ```{r pca model}
